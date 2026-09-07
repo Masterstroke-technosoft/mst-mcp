@@ -3,8 +3,8 @@
 An official Model Context Protocol (MCP) server for the **MST Chain** ecosystem. This server provides tools for LLMs (like Claude) to search, list, and retrieve MST developer documentation (APIs, wallets, transactions, authentication, etc.).
 
 ## 🚀 Deployed Endpoint
-* **Base URL (SSE Transport):** `https://mst-mcp.onrender.com/sse`
-* **Favicon / Branding:** `https://mst-mcp.onrender.com/favicon.png`
+* **Base URL (SSE Transport):** `http://<YOUR_AWS_EC2_IP_OR_DOMAIN>:<PORT>/sse`
+* **Favicon / Branding:** `http://<YOUR_AWS_EC2_IP_OR_DOMAIN>:<PORT>/favicon.png`
 
 ---
 
@@ -52,9 +52,6 @@ To run the server locally:
    python server.py
    ```
 
-### Deploying on Render
-1. Create a new **Web Service** on Render.
-2. Connect your Git repository.
-3. Choose the **Docker** runtime (it automatically uses the workspace [`Dockerfile`](./Dockerfile)).
-4. Configure environment variables (like `PORT`).
-5. Render will automatically build the container and deploy the secure SSE endpoint.
+### Deploying on AWS EC2
+We have provided a dedicated deployment guide for AWS EC2. 
+Please refer to the [`DEPLOYMENT.md`](./DEPLOYMENT.md) file for comprehensive, step-by-step instructions on setting up your EC2 instance natively or via Docker.
