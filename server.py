@@ -55,7 +55,7 @@ mcp = MCPServer(
 
 
 
-DOCS_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "Docuements")
+DOCS_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "Documents")
 
 
 @mcp.resource("docs://{filename}")
@@ -135,6 +135,7 @@ def search_documents(query: str) -> dict[str, list[str]]:
 from starlette.applications import Starlette
 from starlette.routing import Route, Mount
 from starlette.responses import RedirectResponse, JSONResponse, FileResponse
+from starlette.staticfiles import StaticFiles
 # pyrefly: ignore [missing-import]
 from mcp.server.sse import SseServerTransport
 
@@ -343,6 +344,7 @@ app = Starlette(
         Route("/token", endpoint=handle_token, methods=["POST"]),
         Route("/sse", endpoint=handle_sse, methods=["GET", "POST"]),
         Mount("/messages/", app=sse.handle_post_message),
+        Mount("/public", app=StaticFiles(directory="public"), name="public"),
     ],
 )
 
