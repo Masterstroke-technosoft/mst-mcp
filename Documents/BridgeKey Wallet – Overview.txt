@@ -1,0 +1,235 @@
+# BridgeKey Wallet – Overview and User Guide
+
+## 1. Overview
+
+BridgeKey is a non-custodial, multi-chain crypto wallet browser extension designed for managing digital assets and interacting with Web3 applications across **95+ EVM-compatible blockchain networks**.
+
+BridgeKey provides a unified wallet experience where users can manage accounts, view assets, switch networks, interact with decentralized applications, manage NFTs, and sign blockchain transactions directly from their browser.
+
+BridgeKey keeps wallet ownership with the user, providing direct control over wallet accounts, assets, and transaction signing.
+
+## 2. Key Features
+
+BridgeKey provides the following capabilities:
+
+* Multi-chain wallet management
+* Support for 95+ EVM-compatible blockchain networks
+* Multiple wallet and account management
+* Send and receive digital assets
+* View token balances
+* View transaction activity
+* NFT management
+* Web3 application connectivity
+* Blockchain network switching
+* Transaction signing
+* Non-custodial wallet architecture
+* User-controlled private keys
+
+## 3. How to Download BridgeKey
+
+BridgeKey is available as a Chrome browser extension through the Chrome Web Store.
+
+### Official Download
+
+Chrome Web Store:
+
+https://chromewebstore.google.com/detail/bridgekey/bfjojdcfenehemjgjlepdjomkpginlkg
+
+### Installation Steps
+
+1. Open Google Chrome.
+2. Visit the official BridgeKey Chrome Web Store page.
+3. Select **Add to Chrome**.
+4. Confirm the extension installation.
+5. Open BridgeKey from the Chrome Extensions menu.
+6. Pin BridgeKey to the Chrome toolbar for convenient access.
+7. Complete the wallet setup process.
+
+## 4. Setting Up a Wallet
+
+After installing BridgeKey, users can set up their wallet directly through the extension.
+
+The setup process allows users to:
+
+* Create a new wallet
+* Access an existing wallet using the available wallet recovery/import options
+* Manage wallet accounts
+* Access supported blockchain networks
+* View available digital assets
+
+Wallet recovery information should be stored securely by the wallet owner.
+
+## 5. Managing Wallet Accounts
+
+BridgeKey allows users to manage their wallet accounts from a single browser extension.
+
+Users can:
+
+* View wallet addresses
+* Switch between accounts
+* View account balances
+* Access assets across supported networks
+* Review blockchain transaction activity
+
+## 6. Sending Digital Assets
+
+Users can send supported digital assets through BridgeKey.
+
+### Steps
+
+1. Open BridgeKey.
+2. Select the required wallet account.
+3. Select the blockchain network.
+4. Select the asset to send.
+5. Enter the recipient address.
+6. Enter the transaction amount.
+7. Review the transaction details and network information.
+8. Confirm and sign the transaction through BridgeKey.
+
+The transaction is submitted to the selected blockchain network after the required wallet signature is completed.
+
+## 7. Receiving Digital Assets
+
+BridgeKey provides wallet addresses that can be used to receive supported digital assets.
+
+### Steps
+
+1. Open BridgeKey.
+2. Select the wallet account.
+3. Select the required blockchain network.
+4. Copy the wallet address.
+5. Provide the address to the sender.
+
+The sender should use the appropriate blockchain network supported by the receiving wallet.
+
+## 8. Blockchain Network Switching
+
+BridgeKey supports **95+ EVM-compatible blockchain networks**.
+
+Users can switch between supported networks directly from the wallet interface.
+
+Network switching allows users to:
+
+* View assets on different networks
+* Interact with applications deployed on different EVM chains
+* Send and receive assets on supported networks
+* Sign transactions for the selected blockchain network
+
+## 9. Connecting to Web3 Applications
+
+BridgeKey can connect with compatible Web3 applications through the browser.
+
+### Typical Connection Flow
+
+1. Open a compatible Web3 application.
+2. Select **Connect Wallet**.
+3. Select BridgeKey.
+4. Select the wallet account to connect.
+5. Complete the connection request through BridgeKey.
+
+Once connected, the Web3 application can interact with the connected wallet according to the supported wallet connection capabilities.
+
+## 10. NFT Management
+
+BridgeKey supports NFT management across supported blockchain networks.
+
+Depending on the network and NFT standard, users can:
+
+* View NFTs associated with their wallet
+* Manage NFT assets
+* Interact with supported NFT-enabled applications
+
+## 11. Transaction Signing
+
+BridgeKey provides wallet-based transaction signing.
+
+A blockchain transaction can be prepared by a Web3 application or supported integration and presented to the BridgeKey wallet for signing.
+
+The general transaction flow is:
+
+Web3 Application / MCP / AI Agent
+↓
+Transaction Request
+↓
+BridgeKey Wallet
+↓
+Transaction Signing
+↓
+Blockchain Network
+
+BridgeKey acts as the wallet layer responsible for transaction authorization and signing.
+
+## 12. BridgeKey with MCP and AI Agents
+
+BridgeKey can be integrated into an MCP or AI-agent architecture where the AI system interacts with blockchain functionality while the wallet remains responsible for transaction signing.
+
+### Example Architecture
+
+AI Agent
+↓
+MCP Server
+↓
+Blockchain Transaction Request
+↓
+BridgeKey
+↓
+User Wallet Signature
+↓
+EVM Blockchain
+
+An AI agent can assist with preparing blockchain operations such as:
+
+* Checking wallet balances
+* Identifying supported networks
+* Preparing transaction parameters
+* Preparing asset transfer requests
+* Interacting with blockchain-based applications
+
+BridgeKey provides the wallet interface through which the transaction can be signed and authorized.
+
+### Private-Key Architecture
+
+BridgeKey follows a non-custodial wallet model. Private keys remain associated with the user's wallet and are not required to be provided to the AI agent or MCP server.
+
+This enables an architecture where:
+
+**AI/MCP → Transaction Request → BridgeKey → Signature → Blockchain**
+
+rather than:
+
+**AI/MCP → Private Key → Blockchain**
+
+This separation allows AI systems to work with blockchain operations while wallet ownership and transaction signing remain within the wallet layer.
+
+## 13. Supported Blockchain Environment
+
+BridgeKey is designed for the EVM ecosystem and supports interaction with **95+ EVM-compatible blockchain networks**.
+
+The supported network environment enables users to manage assets and interact with decentralized applications across multiple EVM-compatible chains from a single wallet extension.
+
+## 14. Security and Wallet Ownership
+
+BridgeKey is a non-custodial wallet. Users maintain control of their wallet credentials and assets.
+
+Important wallet information includes:
+
+* Private keys
+* Recovery phrases
+* Wallet addresses
+* Account information
+
+Private keys and recovery information are sensitive wallet credentials and should remain under the control of the wallet owner.
+
+## 15. MCP Knowledge Summary
+
+**BridgeKey** is a non-custodial multi-chain crypto wallet browser extension supporting **95+ EVM-compatible blockchain networks**.
+
+It provides wallet and account management, digital asset transfers, token balances, transaction activity, NFT management, Web3 application connectivity, network switching, and blockchain transaction signing.
+
+For MCP and AI-agent workflows, BridgeKey can function as the wallet and signing layer. The MCP server or AI agent can prepare blockchain transaction requests, while BridgeKey handles wallet-based transaction signing and authorization.
+
+The architecture can be summarized as:
+
+**AI Agent → MCP → Blockchain Operation → BridgeKey → Wallet Signature → Blockchain**
+
+This allows blockchain functionality to be incorporated into AI-agent workflows while keeping wallet ownership and transaction signing within the BridgeKey wallet.
