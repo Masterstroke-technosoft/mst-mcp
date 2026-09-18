@@ -230,6 +230,6 @@ For MCP and AI-agent workflows, BridgeKey can function as the wallet and signing
 
 The architecture can be summarized as:
 
-**AI Agent → MCP → Blockchain Operation → BridgeKey → Wallet Signature → Blockchain**
+AI Agent → MCP → Blockchain Operation → BridgeKey → Wallet Signature → Blockchain
 
 This allows blockchain functionality to be incorporated into AI-agent workflows while keeping wallet ownership and transaction signing within the BridgeKey wallet.
